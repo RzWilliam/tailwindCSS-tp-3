@@ -1,0 +1,160 @@
+<!-- src/index.html -->
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+</head>
+<body>
+    <div class="dark:bg-slate-900 dark:text-white pb-8 text-sm bg-body">
+        <div class="w-full flex justify-center py-8">
+            <button
+                id="theme-toggle"
+                class="p-2 rounded-full text-white bg-slate-900 dark:text-slate-900 dark:bg-white"
+            >
+                Toggle theme
+            </button>
+        </div>
+        <!-- Ecrivez le contenu à partir d'ici et supprimez le bloc suivant avant de commencer -->
+        <div class="md:w-1/2 mx-3 md:mx-auto p-6 bg-card dark:bg-dark-card rounded-2xl">
+            <div class="flex justify-between items-center">
+                <div class="flex gap-4 items-center">
+                    <span class="p-3 rounded-full bg-calendar flex justify-center items-center dark:bg-dark-calendar">📅</span>
+                    <h1 class="text-xl font-bold text-title dark:text-white">My Schedule</h1>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+            </div>
+            <div class="mt-5 border border-gray-300 p-4 rounded-2xl bg-white dark:bg-dark-card">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="font-semibold text-gray-500 dark:text-white">Tues, Jan 17 2023</h2>
+                        <p class="font-semibold text-gray-700 pt-3 dark:text-white">Shift name</p>
+                    </div>
+                    <div class="bg-purple/10 font-semibold text-gray-700 rounded-full px-3 py-2 dark:text-white dark:bg-purple">In 45 mins</div>
+                </div>
+            </div>
+            
+
+  
+            <div class="mt-3 border border-gray-300 p-4 rounded-2xl bg-card dark:bg-dark-card" id="accordion-collapse" data-accordion="collapse">
+                <div id="accordion-collapse-heading-1" class="flex justify-between items-center" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+                    <h3 class="font-semibold text-gray-700 dark:text-white">07:00A - 03:00P</h3>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0 rotate-180" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </div>
+                <div id="accordion-collapse-body-1" aria-labelledby="accordion-collapse-heading-1" class="mt-3">
+                    <div class="w-3/5 flex flex-col gap-4">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                        </div>
+                        <span class="text-gray-400 dark:text-white">Shift disclaimer lorem ipsum dolor.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 mx-3 md:mx-auto p-6 bg-card dark:bg-dark-card rounded-2xl mt-8">
+            <div class="flex justify-between items-center">
+                <div class="flex gap-4 items-center">
+                    <span class="p-3 rounded-full bg-calendar flex justify-center items-center dark:bg-dark-calendar">📅</span>
+                    <h1 class="text-xl font-bold text-title dark:text-white">My Schedule</h1>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+            </div>
+            <div class="mt-5 border border-gray-300 p-4 rounded-2xl bg-white dark:bg-dark-card">
+                <div class="flex items-center justify-between">
+                    <div>
+                        <h2 class="font-semibold text-gray-500 dark:text-white">Tues, Jan 17 2023</h2>
+                        <p class="font-semibold text-gray-700 pt-3 dark:text-white">Shift name</p>
+                    </div>
+                    <div class="bg-purple/10 font-semibold text-gray-700 rounded-full px-3 py-2 dark:text-white dark:bg-purple">In 45 mins</div>
+                </div>
+            </div>
+            
+            <div class="mt-3 border border-gray-300 p-4 rounded-2xl bg-card dark:bg-dark-card" id="accordion-collapse2" data-accordion="collapse">
+                <div id="accordion-collapse-heading-2" class="flex justify-between items-center" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+                    <h3 class="font-semibold text-gray-700 dark:text-white">07:00A - 03:00P</h3>
+                    <svg data-accordion-icon class="w-6 h-6 shrink-0" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </div>
+                <div id="accordion-collapse-body-2" aria-labelledby="accordion-collapse-heading-2" class="mt-3 hidden">
+                    <div class="w-3/5 flex flex-col gap-4">
+                        <div class="flex flex-col gap-2">
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                            <div class="flex justify-between">
+                                <p class="text-gray-600 dark:text-white">07:00 - 10:00</p>
+                                <p class="text-gray-600 dark:text-white">Drive thru</p>
+                            </div>
+                        </div>
+                        <span class="text-gray-400 dark:text-white">Shift disclaimer lorem ipsum dolor.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="md:w-1/2 mx-3 md:mx-auto p-6 bg-card dark:bg-dark-card rounded-2xl mt-8">
+            <div class="flex justify-between items-center">
+                <div class="flex gap-4 items-center">
+                    <span class="p-3 rounded-full bg-calendar dark:bg-dark-calendar flex justify-center items-center">📅</span>
+                    <h1 class="text-xl font-bold text-title dark:text-white">My Schedule</h1>
+                </div>
+                <svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 512 512"><path d="M502.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-128-128c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L402.7 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l370.7 0-73.4 73.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l128-128z"/></svg>
+            </div>
+            <div class="mt-5 border border-gray-300 p-4 rounded-2xl flex justify-center items-center dark:bg-dark-card">
+                <h2 class="text-base text-gray-600 font-semibold dark:text-white">Empty state message lorem ipsum.</h2>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <script>
+        const btn = document.getElementById("theme-toggle");
+        btn.addEventListener("click", function () {
+            document.body.classList.toggle("dark");
+        });
+    </script>
+    <script src="https://unpkg.com/flowbite@1.3.3/dist/flowbite.js"></script>
+</body>
+</html>
